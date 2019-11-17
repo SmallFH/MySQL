@@ -69,7 +69,7 @@ public class ChooseDao {
 	
 	
 	public void batchAdd() {
-		changeSqlUtil.write("insert into info_stu values('动物科技学院','动物医学','1','动医181','20180724111','计划还发','1','1999-08-05','15516515122')");
+		changeSqlUtil.write("insert into info_stu values('鍔ㄧ墿绉戞妧瀛﹂櫌','鍔ㄧ墿鍖诲','1','鍔ㄥ尰181','20180724111','璁″垝杩樺彂','1','1999-08-05','15516515122')");
 	}
 	
 	

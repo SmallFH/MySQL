@@ -27,7 +27,7 @@ public class ChangeSqlUtil {
 			} catch (SQLException e1) {
 				e1.printStackTrace();
 			}
-			System.out.println("SQlĞ´ÈëÒì³£");
+			System.out.println("SQlå†™å…¥å¼‚å¸¸");
 			e.printStackTrace();
 			return a = false;
 		}
@@ -64,7 +64,7 @@ public class ChangeSqlUtil {
 			} catch (SQLException e1) {
 				e1.printStackTrace();
 			}
-			System.out.println("SQlĞ´ÈëÒì³£");
+			System.out.println("SQlå†™å…¥å¼‚å¸¸");
 			e.printStackTrace();
 			return a = false;
 		}
@@ -72,7 +72,7 @@ public class ChangeSqlUtil {
 	}
 
 	/**
-	 * params[0] == 0(²éÑ¯ÏêÏ¸ĞÅÏ¢),1(²éÑ¯ĞÅÏ¢×ÜÊı),2(·ÖÒ³²éÑ¯ĞÅÏ¢ÌõÊı)
+	 * params[0] == 0(æŸ¥è¯¢è¯¦ç»†ä¿¡æ¯),1(æŸ¥è¯¢ä¿¡æ¯æ€»æ•°),2(åˆ†é¡µæŸ¥è¯¢ä¿¡æ¯æ¡æ•°)
 	 * 
 	 * @param sql
 	 * @param params
@@ -119,7 +119,7 @@ public class ChangeSqlUtil {
 	}
 	
 	public String filtrationString(String oldString) {
-		String newString = oldString.replaceAll("[\\t\\\b\\\n\\\f\\\r\\\"\\\'\\\\`~!@#$%^&*()+=|{}':;',\\[\\].<>/?~£¡@#£¤%¡­¡­&*£¨£©¡ª¡ª+|{}¡¾¡¿¡®£»£º¡±¡°¡¯¡££¬ ¡¢£¿ a-z]","");
+		String newString = oldString.replaceAll("[\\t\\\b\\\n\\\f\\\r\\\"\\\'\\\\`~!@#$%^&*()+=|{}':;',\\[\\].<>/?~ï¼@#ï¿¥%â€¦â€¦&*ï¼ˆï¼‰â€”â€”+|{}ã€ã€‘â€˜ï¼›ï¼šâ€â€œâ€™ã€‚ï¼Œ ã€ï¼Ÿ a-z]","");
 		System.out.println(newString.length());
 		if (newString.length()!=11) {
 			System.out.println(false);

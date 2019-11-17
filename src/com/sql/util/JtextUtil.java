@@ -11,13 +11,13 @@ public class JtextUtil implements FocusListener {
 	public JtextUtil(JTextField jTextField,String hintText) {
 		this.textField = jTextField;
 		this.hintText = hintText;
-		jTextField.setText(hintText);  //Ä¬ÈÏÖ±½ÓÏÔÊ¾
+		jTextField.setText(hintText);  //é»˜è®¤ç›´æ¥æ˜¾ç¤º
 		jTextField.setForeground(Color.red);
 	}
  
 	@Override
 	public void focusGained(FocusEvent e) {
-		//»ñÈ¡½¹µãÊ±£¬Çå¿ÕÌáÊ¾ÄÚÈİ
+		//è·å–ç„¦ç‚¹æ—¶ï¼Œæ¸…ç©ºæç¤ºå†…å®¹
 		String temp = textField.getText();
 		if(temp.equals(hintText)) {
 			textField.setText("");
@@ -28,7 +28,7 @@ public class JtextUtil implements FocusListener {
  
 	@Override
 	public void focusLost(FocusEvent e) {	
-		//Ê§È¥½¹µãÊ±£¬Ã»ÓĞÊäÈëÄÚÈİ£¬ÏÔÊ¾ÌáÊ¾ÄÚÈİ
+		//å¤±å»ç„¦ç‚¹æ—¶ï¼Œæ²¡æœ‰è¾“å…¥å†…å®¹ï¼Œæ˜¾ç¤ºæç¤ºå†…å®¹
 		String temp = textField.getText();
 		if(temp.equals("")) {
 			textField.setText(hintText);

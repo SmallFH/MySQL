@@ -62,7 +62,7 @@ public class TeachViewTest extends FaceUtil implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == SwingUtil.jmi[0][0]) {
-			System.out.println("²é¿´½ÌÊ¦ĞÅÏ¢");
+			System.out.println("æŸ¥çœ‹æ•™å¸ˆä¿¡æ¯");
 			jp.removeAll();
 			HaveChangePanel hcp = new HaveChangePanel(this);
 			hcp.setBounds(0, 0, dataMap.getJf_size()[0], dataMap.getJf_size()[1]);
@@ -70,10 +70,10 @@ public class TeachViewTest extends FaceUtil implements ActionListener{
 			jp.validate();
 		}else if (e.getSource() == SwingUtil.jmi[1][0]) {
 			Vector<Object> rowData = new GradeControl().queryTeacherGrade(teacher_name, teach_name);
-			String[] name = { "Ñ§ºÅ", "°à¼¶", "ĞÕÃû", "³É¼¨" };
+			String[] name = { "å­¦å·", "ç­çº§", "å§“å", "æˆç»©" };
 			SwingUtil.addTable(dataMap, jp, rowData, name);
 		}else if (e.getSource() == SwingUtil.jmi[1][1]) {
-			System.out.println("Â¼Èë³É¼¨");
+			System.out.println("å½•å…¥æˆç»©");
 			AddGradeTest addGrade = new AddGradeTest();
 			JPanel ag = addGrade.JP();
 			jp.removeAll();
@@ -83,12 +83,12 @@ public class TeachViewTest extends FaceUtil implements ActionListener{
 			jp.repaint();
 			jp.validate();
 		}else if (e.getSource() == SwingUtil.jmi[2][0]) {
-			System.out.println("²é¿´½ÌÊ¦±¾ÈËµÄ¿Î³ÌĞÅÏ¢");
+			System.out.println("æŸ¥çœ‹æ•™å¸ˆæœ¬äººçš„è¯¾ç¨‹ä¿¡æ¯");
 			Vector<Object> rowData = new CourseControl().queryTeacherCourse(teacher_name);
-			String[] name = { "ÉÏ¿Î°à¼¶", "ÉÏ¿ÎÊ±¼ä", "ÉÏ¿ÎµØµã", "¿Î³ÌÒªÇó" };
+			String[] name = { "ä¸Šè¯¾ç­çº§", "ä¸Šè¯¾æ—¶é—´", "ä¸Šè¯¾åœ°ç‚¹", "è¯¾ç¨‹è¦æ±‚" };
 			SwingUtil.addTable(dataMap, jp, rowData, name);
 		} else if (e.getSource() == SwingUtil.jmi[3][0]) {
-			System.out.println("ĞŞ¸ÄÃÜÂë");
+			System.out.println("ä¿®æ”¹å¯†ç ");
 			ChangePassWordText cpw = new ChangePassWordText(2,teachAccount,teacherQuestion,teacherAnswer,this);
 			JPanel cp = cpw.JP();
 			jp.removeAll();
@@ -103,12 +103,12 @@ public class TeachViewTest extends FaceUtil implements ActionListener{
 		JTable jt;
 		JButton jb;
 		JFrame jf;
-		String[] name = { "ÔºÏµ", "ËùÊô×¨Òµ", "½ÌÖ°¹¤ºÅ", "½ÌÊÚ¿ÆÄ¿", "ĞÕÃû", "ĞÔ±ğ", "³öÉúÈÕÆÚ", "ÁªÏµ·½Ê½" };
+		String[] name = { "é™¢ç³»", "æ‰€å±ä¸“ä¸š", "æ•™èŒå·¥å·", "æ•™æˆç§‘ç›®", "å§“å", "æ€§åˆ«", "å‡ºç”Ÿæ—¥æœŸ", "è”ç³»æ–¹å¼" };
 
 		public HaveChangePanel(JFrame jf) {
 			this.jf = jf;
 			this.setLayout(new BorderLayout());
-			jb = new JButton("ĞŞ¸ÄĞÅÏ¢");
+			jb = new JButton("ä¿®æ”¹ä¿¡æ¯");
 			jb.addActionListener(this);
 			JPanel jp_up = new JPanel();
 			jp_up.setLayout(new BorderLayout());
@@ -124,7 +124,7 @@ public class TeachViewTest extends FaceUtil implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			if (e.getSource() == jb) {
-				System.out.println("ĞŞ¸ÄĞÅÏ¢°¡");
+				System.out.println("ä¿®æ”¹ä¿¡æ¯å•Š");
 				int a = jt.getSelectedRow();
 				int b = jt.getColumnCount();
 				System.out.println(a + " / " + b);

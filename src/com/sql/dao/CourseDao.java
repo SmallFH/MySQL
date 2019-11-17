@@ -35,7 +35,7 @@ public class CourseDao {
 
 	public void updateClassCourse(Course course) {
 		/**
-		 * //²»ÖªµÀ¸Ã´ÓÄÄ¸ö×Ö¶ÎÀ´²éÑ¯£¬ÓÃÀ´¸üÕıĞÂµÄÊı¾İ
+		 * //ä¸çŸ¥é“è¯¥ä»å“ªä¸ªå­—æ®µæ¥æŸ¥è¯¢ï¼Œç”¨æ¥æ›´æ­£æ–°çš„æ•°æ®
 		 * 
 		 */
 		changeSqlUtil.write("update course_class set cou_id=?,teacher=?,stu_class=?,time=?,location=?,test=? where ",

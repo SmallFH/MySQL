@@ -56,26 +56,26 @@ public class ChangePassWordText extends FaceUtil implements ActionListener {
 			case 0:
 				break;
 			case 1:
-				JOptionPane.showMessageDialog(this, "ÃÜÂë¸ü¸Ä³É¹¦");
-				// ĞŞ¸ÄÃÜÂëÖ®ºóÓ¦¸ÃÍË³ö¿Í»§¶ËÖØĞÂµÇÂ¼µÄ
+				JOptionPane.showMessageDialog(this, "å¯†ç æ›´æ”¹æˆåŠŸ");
+				// ä¿®æ”¹å¯†ç ä¹‹ååº”è¯¥é€€å‡ºå®¢æˆ·ç«¯é‡æ–°ç™»å½•çš„
 				jf.dispose();
 				new UserView();
 				break;
 			case 2:
-				JOptionPane.showMessageDialog(this, "ÃÜ±£´ğ°¸²»ÕıÈ·");
+				JOptionPane.showMessageDialog(this, "å¯†ä¿ç­”æ¡ˆä¸æ­£ç¡®");
 				break;
 			case 3:
-				JOptionPane.showMessageDialog(this, "Á½´ÎÃÜÂë²»Ò»ÖÂ");
+				JOptionPane.showMessageDialog(this, "ä¸¤æ¬¡å¯†ç ä¸ä¸€è‡´");
 				break;
 			case 4:
-				JOptionPane.showMessageDialog(this, "ÇëÊäÈëĞÂÃÜÂë");
+				JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥æ–°å¯†ç ");
 				break;
 			case 5:
-				JOptionPane.showMessageDialog(this, "ÇëÊäÈëÃÜ±£´ğ°¸");
+				JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥å¯†ä¿ç­”æ¡ˆ");
 				break;
 			}
 		} else {
-			int a = JOptionPane.showConfirmDialog(null, "ÊÇ·ñÒªÖØÖÃÃÜ±££¬´Ë²Ù×÷½«ÎŞ·¨·µ»Øµ±Ç°½çÃæ£¬Çë½÷É÷Ñ¡Ôñ£¡");
+			int a = JOptionPane.showConfirmDialog(null, "æ˜¯å¦è¦é‡ç½®å¯†ä¿ï¼Œæ­¤æ“ä½œå°†æ— æ³•è¿”å›å½“å‰ç•Œé¢ï¼Œè¯·è°¨æ…é€‰æ‹©ï¼");
 			switch (a) {
 			case 0:
 				jf.dispose();

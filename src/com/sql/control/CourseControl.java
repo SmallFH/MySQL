@@ -18,7 +18,7 @@ public class CourseControl {
 	
 	
 	/**
-	 * forÑ­»·±éÀú½á¹û½øĞĞ¸ÄÖµ
+	 * forå¾ªç¯éå†ç»“æœè¿›è¡Œæ”¹å€¼
 	 * @param stuclass
 	 * @return
 	 */
@@ -30,8 +30,8 @@ public class CourseControl {
 		for (int i = 0; i < a.size(); i++) {
 			b[i] = (Vector<Object>) a.get(i);
 			switch ((String)b[i].get(9)) {
-			case "0": b[i].set(9, "¿¼²é"); break;
-			case "1": b[i].set(9, "¿¼ÊÔ"); break;
+			case "0": b[i].set(9, "è€ƒæŸ¥"); break;
+			case "1": b[i].set(9, "è€ƒè¯•"); break;
 			}
 			rowData.add(b[i]);
 		}
@@ -53,8 +53,8 @@ public class CourseControl {
 		for (int i = 0; i < a.size(); i++) {
 			b[i] = (Vector<Object>) a.get(i);
 			switch ((String)b[i].get(9)) {
-			case "0": b[i].set(9, "¿¼²é"); break;
-			case "1": b[i].set(9, "¿¼ÊÔ"); break;
+			case "0": b[i].set(9, "è€ƒæŸ¥"); break;
+			case "1": b[i].set(9, "è€ƒè¯•"); break;
 			}
 			rowData.add(b[i]);
 		}
@@ -69,8 +69,8 @@ public class CourseControl {
 		for (int i = 0; i < a.size(); i++) {
 			b[i] = (Vector<Object>) a.get(i);
 			switch ((String)b[i].get(3)) {
-			case "0": b[i].set(3, "¿¼²é"); break;
-			case "1": b[i].set(3, "¿¼ÊÔ"); break;
+			case "0": b[i].set(3, "è€ƒæŸ¥"); break;
+			case "1": b[i].set(3, "è€ƒè¯•"); break;
 			}
 			rowData.add(b[i]);
 		}

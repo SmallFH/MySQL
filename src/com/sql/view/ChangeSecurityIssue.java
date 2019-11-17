@@ -40,20 +40,20 @@ public class ChangeSecurityIssue extends FaceUtil implements ActionListener {
 			String newQuestion = SwingUtil.jtf[0].getText();
 			String newAnswer = SwingUtil.jtf[1].getText();
 			UserControl uc = new UserControl();
-			System.out.println("Ìá½»");
-			// Ìá½»¹ıÈ¥½øĞĞ¸üĞÂ²Ù×÷£¬¸üĞÂÃÜ±£ÎÊÌâ.
+			System.out.println("æäº¤");
+			// æäº¤è¿‡å»è¿›è¡Œæ›´æ–°æ“ä½œï¼Œæ›´æ–°å¯†ä¿é—®é¢˜.
 			System.out.println(newQuestion);
 			System.out.println(newAnswer);
 			int a = uc.updateSecurityIssue(userID, userAccount, newQuestion, newAnswer);
 			switch (a) {
 			case 1:
-				JOptionPane.showMessageDialog(this, "ÃÜ±£ÎÊÌâ²»ÄÜÎª¿Õ");
+				JOptionPane.showMessageDialog(this, "å¯†ä¿é—®é¢˜ä¸èƒ½ä¸ºç©º");
 				break;
 			case 2:
-				JOptionPane.showMessageDialog(this, "ÃÜ±£´ğ°¸²»ÄÜÎª¿Õ");
+				JOptionPane.showMessageDialog(this, "å¯†ä¿ç­”æ¡ˆä¸èƒ½ä¸ºç©º");
 				break;
 			case 3:
-				JOptionPane.showMessageDialog(this, "ĞŞ¸Ä³É¹¦!ÄúĞèÒªÖØĞÂµÇÂ¼¡£");
+				JOptionPane.showMessageDialog(this, "ä¿®æ”¹æˆåŠŸ!æ‚¨éœ€è¦é‡æ–°ç™»å½•ã€‚");
 				new UserView();
 				this.dispose();
 				break;

@@ -22,7 +22,7 @@ public class SwingUtil {
 	public static JMenuItem[][] jmi;
 	
 	/**
-	 *传参数传一个DataMap过来就好
+	 *浼犲弬鏁颁紶涓�涓狣ataMap杩囨潵灏卞ソ
 	 */
 	
 	public static JButton[] JB(DataMap dataMap,JFrame jf,JPanel jp) {
@@ -135,7 +135,7 @@ public class SwingUtil {
 		            format.parse(str);
 		         } catch (ParseException e) {
 		           // e.printStackTrace();
-		 // 如果throw java.text.ParseException或者NullPointerException，就说明格式不对
+		 // 濡傛灉throw java.text.ParseException鎴栬�匩ullPointerException锛屽氨璇存槑鏍煎紡涓嶅
 		            convertSuccess=false;
 		        } 
 		        return convertSuccess;

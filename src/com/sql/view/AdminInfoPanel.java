@@ -50,17 +50,17 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 		this.tableNumber = tableNumber;
 		switch (tableNumber) {
 		case 0:
-			columnName = new String[] { "ÔºÏµ", "×¨Òµ", "Äê¼¶", "°à¼¶", "Ñ§ºÅ", "ĞÕÃû", "ĞÔ±ğ", "³öÉúÈÕÆÚ", "µç»°" };
+			columnName = new String[] { "é™¢ç³»", "ä¸“ä¸š", "å¹´çº§", "ç­çº§", "å­¦å·", "å§“å", "æ€§åˆ«", "å‡ºç”Ÿæ—¥æœŸ", "ç”µè¯" };
 			break;
 		case 1:
-			columnName = new String[] { "ÔºÏµ", "ËùÊô×¨Òµ", "½ÌÖ°¹¤ºÅ", "½ÌÊÚ¿ÆÄ¿", "ĞÕÃû", "ĞÔ±ğ", "³öÉúÈÕÆÚ", "ÁªÏµ·½Ê½" };
+			columnName = new String[] { "é™¢ç³»", "æ‰€å±ä¸“ä¸š", "æ•™èŒå·¥å·", "æ•™æˆç§‘ç›®", "å§“å", "æ€§åˆ«", "å‡ºç”Ÿæ—¥æœŸ", "è”ç³»æ–¹å¼" };
 			break;
 		case 2:
-			columnName = new String[] { "ÔºÏµ", "×¨Òµ", "°à¼¶", "Ñ§ºÅ", "ĞÕÃû", "¿ÆÄ¿", "½ÌÊ¦", "³É¼¨" };
+			columnName = new String[] { "é™¢ç³»", "ä¸“ä¸š", "ç­çº§", "å­¦å·", "å§“å", "ç§‘ç›®", "æ•™å¸ˆ", "æˆç»©" };
 			break;
 		case 3:
-			columnName = new String[] { "¿Î³Ì±àºÅ", "ÔºÏµ", "¿Î³ÌÃû³Æ", "¿ÎÊ±", "Ñ§·Ö", "Ñ¡ĞŞ", "ÊÚ¿Î½ÌÊ¦", "ÉÏ¿Î°à¼¶", "ÉÏ¿ÎÊ±¼ä", "ÉÏ¿ÎµØµã",
-					"¿¼ºË·½Ê½" };
+			columnName = new String[] { "è¯¾ç¨‹ç¼–å·", "é™¢ç³»", "è¯¾ç¨‹åç§°", "è¯¾æ—¶", "å­¦åˆ†", "é€‰ä¿®", "æˆè¯¾æ•™å¸ˆ", "ä¸Šè¯¾ç­çº§", "ä¸Šè¯¾æ—¶é—´", "ä¸Šè¯¾åœ°ç‚¹",
+					"è€ƒæ ¸æ–¹å¼" };
 			break;
 		}
 		allPage = ac.allNumber("", pageSize);
@@ -73,7 +73,7 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 	protected JPanel JP() {
 		super.JP();
 		jp.setLayout(new BorderLayout());
-		String[] jbbName = { "Ê×Ò³", "ÉÏÒ»Ò³", "ÏÂÒ»Ò³", "Î²Ò³", "Ìø×ª" };
+		String[] jbbName = { "é¦–é¡µ", "ä¸Šä¸€é¡µ", "ä¸‹ä¸€é¡µ", "å°¾é¡µ", "è·³è½¬" };
 		JPanel jp_up = new JPanel();
 		JPanel jp_down = new JPanel();
 		jp_center = new JPanel();
@@ -102,7 +102,7 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 		jt = SwingUtil.addTable(dataMap, jp_center, rowData, columnName);
 
 		/**
-		 * ĞèÒª¸ÄµÄ
+		 * éœ€è¦æ”¹çš„
 		 */
 		for (int i = 0; i < jbb.length; i++) {
 			jbb[i] = new JButton(jbbName[i]);
@@ -125,12 +125,12 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 			allPage = ac.allNumber(SwingUtil.jtf[0].getText(), pageSize);
 			jl1.setText(page + " / " + allPage);
 			SwingUtil.addTable(dataMap, jp_center, rowData, columnName);
-			System.out.println("²éÑ¯");
+			System.out.println("æŸ¥è¯¢");
 		} else if (e.getSource() == SwingUtil.jb[1]) {
-			System.out.println("Ìí¼Ó");
+			System.out.println("æ·»åŠ ");
 			new AdminAdd(this, columnName);
 		} else if (e.getSource() == SwingUtil.jb[2]) {
-			System.out.println("ĞŞ¸Ä");
+			System.out.println("ä¿®æ”¹");
 			int a = jt.getSelectedRow();
 			int b = jt.getColumnCount();
 			System.out.println(a + " / " + b);
@@ -148,8 +148,8 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 			new UpdateInfo(0, this, f, columnName);
 
 		} else if (e.getSource() == SwingUtil.jb[3]) {
-			System.out.println("É¾³ı");
-			int judge = JOptionPane.showConfirmDialog(this, "ÄãÕæµÄÈ·¶¨É¾³ıÕâÌõ¼ÇÂ¼Âğ£¿");
+			System.out.println("åˆ é™¤");
+			int judge = JOptionPane.showConfirmDialog(this, "ä½ çœŸçš„ç¡®å®šåˆ é™¤è¿™æ¡è®°å½•å—ï¼Ÿ");
 			if (judge == 0) {
 				int row = jt.getSelectedRow();
 				switch (tableNumber) {
@@ -172,7 +172,7 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 					
 					break;
 				}
-				JOptionPane.showMessageDialog(this, "É¾³ı³É¹¦");
+				JOptionPane.showMessageDialog(this, "åˆ é™¤æˆåŠŸ");
 			}
 		} else if (e.getSource() == jbb[0]) {
 			if (page == 1) {
@@ -183,7 +183,7 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 				allPage = ac.allNumber(SwingUtil.jtf[0].getText(), pageSize);
 				jl1.setText(page + " / " + allPage);
 				jt = SwingUtil.addTable(dataMap, jp_center, rowData, columnName);
-				System.out.println("Ê×Ò³");
+				System.out.println("é¦–é¡µ");
 			}
 		} else if (e.getSource() == jbb[1]) {
 			if (page <= 1) {
@@ -194,7 +194,7 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 				allPage = ac.allNumber(SwingUtil.jtf[0].getText(), pageSize);
 				jl1.setText(page + " / " + allPage);
 				jt = SwingUtil.addTable(dataMap, jp_center, rowData, columnName);
-				System.out.println("ÉÏÒ»Ò³");
+				System.out.println("ä¸Šä¸€é¡µ");
 			}
 		} else if (e.getSource() == jbb[2]) {
 			if (page >= allPage) {
@@ -205,7 +205,7 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 				allPage = ac.allNumber(SwingUtil.jtf[0].getText(), pageSize);
 				jl1.setText(page + " / " + allPage);
 				jt = SwingUtil.addTable(dataMap, jp_center, rowData, columnName);
-				System.out.println("ÏÂÒ»Ò³");
+				System.out.println("ä¸‹ä¸€é¡µ");
 			}
 		} else if (e.getSource() == jbb[3]) {
 			page = allPage;
@@ -214,7 +214,7 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 			allPage = ac.allNumber(SwingUtil.jtf[0].getText(), pageSize);
 			jl1.setText(page + " / " + allPage);
 			jt = SwingUtil.addTable(dataMap, jp_center, rowData, columnName);
-			System.out.println("Î²Ò³");
+			System.out.println("å°¾é¡µ");
 		} else if (e.getSource() == jbb[4]) {
 			String number = null;
 			try {
@@ -227,10 +227,10 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 					jl1.setText(page + " / " + allPage);
 					jt = SwingUtil.addTable(dataMap, jp_center, rowData, columnName);
 				} else {
-					JOptionPane.showMessageDialog(this, "Ò³Âë³¬³ö·¶Î§");
+					JOptionPane.showMessageDialog(this, "é¡µç è¶…å‡ºèŒƒå›´");
 				}
 			} catch (Exception e2) {
-				JOptionPane.showMessageDialog(this, "Ò³Âë²»ÕıÈ·");
+				JOptionPane.showMessageDialog(this, "é¡µç ä¸æ­£ç¡®");
 			}
 		}
 
@@ -246,7 +246,7 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 		public AdminAdd(JFrame jf, String[] cloumnName) {
 			cloumnNames = new Vector<>(Arrays.asList(cloumnName));
 			Vector<Object> rowData = new Vector<>();
-			JDialog jd = new JDialog(jf, "Ìí¼ÓĞÅÏ¢", true);
+			JDialog jd = new JDialog(jf, "æ·»åŠ ä¿¡æ¯", true);
 			defaultTableModel = new DefaultTableModel(rowData, cloumnNames);
 			jt = new JTable(defaultTableModel);
 			JScrollPane jsp = new JScrollPane(jt);
@@ -255,9 +255,9 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 			jp.setBackground(Color.GREEN);
 			jp.setPreferredSize(new Dimension(0, 50));
 			jd.add(jp, BorderLayout.SOUTH);
-			addRow = new JButton("Ìí¼Ó¿Õ°×ĞĞ");
-			saveData = new JButton("±£´æÊı¾İ");
-			delRow = new JButton("É¾³ıĞĞ");
+			addRow = new JButton("æ·»åŠ ç©ºç™½è¡Œ");
+			saveData = new JButton("ä¿å­˜æ•°æ®");
+			delRow = new JButton("åˆ é™¤è¡Œ");
 			jp.add(addRow);
 			jp.add(saveData);
 			jp.add(delRow);
@@ -272,11 +272,11 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 
 		public void actionPerformed(ActionEvent e) {
 			if (e.getSource() == addRow) {
-				System.out.println("Ìí¼Ó¿Õ°×ĞĞ");
+				System.out.println("æ·»åŠ ç©ºç™½è¡Œ");
 				Vector<Object> a = new Vector<>();
 				defaultTableModel.insertRow(0, a);
 			} else if (e.getSource() == saveData) {
-				System.out.println("±£´æÊı¾İ");
+				System.out.println("ä¿å­˜æ•°æ®");
 				System.out.println("---------");
 				int rowCount = defaultTableModel.getRowCount();
 				int columnCount = defaultTableModel.getColumnCount();
@@ -288,7 +288,7 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 								|| defaultTableModel.getValueAt(i, j).equals(""))) {
 							data[i][j] = (String) defaultTableModel.getValueAt(i, j);
 						} else {
-							JOptionPane.showMessageDialog(jd, "±í¸ñÖĞ´æÔÚ¿ÕµÄµ¥Ôª¸ñ£¬ÇëÏÈÉ¾³ıº¬ÓĞ¿Õµ¥Ôª¸ñµÄĞĞ");
+							JOptionPane.showMessageDialog(jd, "è¡¨æ ¼ä¸­å­˜åœ¨ç©ºçš„å•å…ƒæ ¼ï¼Œè¯·å…ˆåˆ é™¤å«æœ‰ç©ºå•å…ƒæ ¼çš„è¡Œ");
 							return;
 						}
 					}
@@ -296,22 +296,22 @@ public class AdminInfoPanel extends FaceUtil implements ActionListener {
 				int reVlue = ac.addAllInfo(tableNumber, data);
 				switch (reVlue) {
 				case 7:
-					JOptionPane.showMessageDialog(jd, "ÈÕÆÚ¸ñÊ½´íÎó");
+					JOptionPane.showMessageDialog(jd, "æ—¥æœŸæ ¼å¼é”™è¯¯");
 					break;
 				case 0:
-					JOptionPane.showMessageDialog(jd, "Êı¾İ´íÎó£¬Çë¶ÔÕÕÔ­±í¸ñÊ½");
+					JOptionPane.showMessageDialog(jd, "æ•°æ®é”™è¯¯ï¼Œè¯·å¯¹ç…§åŸè¡¨æ ¼å¼");
 					break;
 				case 2:
-					JOptionPane.showMessageDialog(jd, "Äê¼¶³ö´í");
+					JOptionPane.showMessageDialog(jd, "å¹´çº§å‡ºé”™");
 					break;
 				case 3:
-					JOptionPane.showMessageDialog(jd, "ĞÔ±ğ³ö´í");
+					JOptionPane.showMessageDialog(jd, "æ€§åˆ«å‡ºé”™");
 					break;
 				}
 				System.out.println("---------");
 
 			} else if (e.getSource() == delRow) {
-				System.out.println("É¾³ı¿Õ°×ĞĞ");
+				System.out.println("åˆ é™¤ç©ºç™½è¡Œ");
 				int a = jt.getSelectedRow();
 				if (a < 0) {
 				} else {

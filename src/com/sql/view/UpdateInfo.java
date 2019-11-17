@@ -31,7 +31,7 @@ public class UpdateInfo implements ActionListener{
 		for (int i = 0; i < columnName.length; i++) {
 			columnNames.add(columnName[i]);
 		}
-		jd = new JDialog(jf, "ĞŞ¸Ä´°¿Ú²âÊÔ", true);
+		jd = new JDialog(jf, "ä¿®æ”¹çª—å£æµ‹è¯•", true);
 		
 		defautifulTableModel = new DefaultTableModel(rowData, columnNames);
 		jt = new JTable(defautifulTableModel);
@@ -41,9 +41,9 @@ public class UpdateInfo implements ActionListener{
 		JPanel jp_down = new JPanel();
 		jp_down.setBackground(Color.red);
 		jp_down.setPreferredSize(new Dimension(0, 50));
-		saveUpdata = new JButton("±£´æĞŞ¸ÄÊı¾İ");
+		saveUpdata = new JButton("ä¿å­˜ä¿®æ”¹æ•°æ®");
 		saveUpdata.addActionListener(this);
-		exitUpdata = new JButton("ÍË³öĞŞ¸Ä");
+		exitUpdata = new JButton("é€€å‡ºä¿®æ”¹");
 		exitUpdata.addActionListener(this);
 		jp_down.add(saveUpdata);
 		jp_down.add(exitUpdata);
@@ -56,13 +56,13 @@ public class UpdateInfo implements ActionListener{
 	
 	
 //	public static void main(String[] args) {
-//		new UpdateInfo(new JFrame("Ëæ±ã"), new Vector<Object>(), new String[] {"A","B","C"});
+//		new UpdateInfo(new JFrame("éšä¾¿"), new Vector<Object>(), new String[] {"A","B","C"});
 //	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == saveUpdata) {
-			System.out.println("±£´æĞŞ¸ÄµÄÊı¾İ");
+			System.out.println("ä¿å­˜ä¿®æ”¹çš„æ•°æ®");
 			int row = defautifulTableModel.getRowCount()-1;
 			int column = defautifulTableModel.getColumnCount();
 			String[] data = new String[column];
@@ -78,7 +78,7 @@ public class UpdateInfo implements ActionListener{
 				break;
 			}
 		} else {
-			System.out.println("ÍË³öĞŞ¸Ä");
+			System.out.println("é€€å‡ºä¿®æ”¹");
 			jd.dispose();
 		}
 	}

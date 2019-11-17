@@ -63,38 +63,38 @@ public class StuViewTest extends FaceUtil implements ActionListener {
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == SwingUtil.jmi[0][0]) {
-			System.out.println("²é¿´¸öÈËĞÅÏ¢");
+			System.out.println("æŸ¥çœ‹ä¸ªäººä¿¡æ¯");
 			jp.removeAll();
 			HaveChangePanel hcp = new HaveChangePanel(this);
 			hcp.setBounds(0, 0, dataMap.getJf_size()[0], dataMap.getJf_size()[1]);
 			jp.add(hcp);
 			jp.validate();
 		} else if (e.getSource() == SwingUtil.jmi[1][0]) {
-			System.out.println("²é¿´°à¼¶¿Î³Ì");
-			String[] name = { "ÔºÏµ", "¿Î³Ì±àºÅ", "¿Î³ÌÃû³Æ", "×ÜÑ§Ê±", "¿Î³ÌÑ§·Ö", "ÈÎ¿Î½ÌÊ¦", "ÉÏ¿Î°à¼¶", "ÉÏ¿ÎÊ±¼ä", "ÉÏ¿ÎµØµã", "¿¼ºË·½Ê½", "ÉÏ¿ÎÈËÊı" };
+			System.out.println("æŸ¥çœ‹ç­çº§è¯¾ç¨‹");
+			String[] name = { "é™¢ç³»", "è¯¾ç¨‹ç¼–å·", "è¯¾ç¨‹åç§°", "æ€»å­¦æ—¶", "è¯¾ç¨‹å­¦åˆ†", "ä»»è¯¾æ•™å¸ˆ", "ä¸Šè¯¾ç­çº§", "ä¸Šè¯¾æ—¶é—´", "ä¸Šè¯¾åœ°ç‚¹", "è€ƒæ ¸æ–¹å¼", "ä¸Šè¯¾äººæ•°" };
 			Vector<Object> rowData = new CourseControl().queryStudentCourse(stuClass);
 			SwingUtil.addTable(dataMap, jp, rowData, name);
 		} else if (e.getSource() == SwingUtil.jmi[1][1]) {
-			System.out.println("Ñ¡¿Î");
+			System.out.println("é€‰è¯¾");
 			jp.removeAll();
 			SelectCourse sc = new SelectCourse(this);
 			sc.setBounds(0, 0, dataMap.getJf_size()[0], dataMap.getJf_size()[1]);
 			jp.add(sc);
 			jp.validate();
 		} else if (e.getSource() == SwingUtil.jmi[1][2]) {
-			System.out.println("²é¿´ÒÑÑ¡¿Î³Ì»òÕßÍË¿Î");
+			System.out.println("æŸ¥çœ‹å·²é€‰è¯¾ç¨‹æˆ–è€…é€€è¯¾");
 			jp.removeAll();
 			ExitSelectCourse esc = new ExitSelectCourse(this);
 			esc.setBounds(0, 0, dataMap.getJf_size()[0], dataMap.getJf_size()[1]);
 			jp.add(esc);
 			jp.validate();
 		} else if (e.getSource() == SwingUtil.jmi[2][0]) {
-			System.out.println("²é¿´³É¼¨");
-			String[] name = { "¿Î³ÌÃû³Æ", "ÈÎ¿Î½ÌÊ¦", "³É¼¨" };
+			System.out.println("æŸ¥çœ‹æˆç»©");
+			String[] name = { "è¯¾ç¨‹åç§°", "ä»»è¯¾æ•™å¸ˆ", "æˆç»©" };
 			Vector<Object> rowData = new GradeControl().queryStuGrade(stuAccount);
 			SwingUtil.addTable(dataMap, jp, rowData, name);
 		} else if (e.getSource() == SwingUtil.jmi[3][0]) {
-			System.out.println("ĞŞ¸ÄÃÜÂë");
+			System.out.println("ä¿®æ”¹å¯†ç ");
 			ChangePassWordText cpw = new ChangePassWordText(1, stuAccount, stuQuestion, stuAnswer, this);
 			JPanel cp = cpw.JP();
 			jp.removeAll();
@@ -109,12 +109,12 @@ public class StuViewTest extends FaceUtil implements ActionListener {
 		JTable jt;
 		JButton jb;
 		JFrame jf;
-		String[] name = { "ÔºÏµ", "×¨Òµ", "Äê¼¶", "°à¼¶", "Ñ§ºÅ", "ĞÕÃû", "ĞÔ±ğ", "³öÉúÈÕÆÚ", "µç»°" };
+		String[] name = { "é™¢ç³»", "ä¸“ä¸š", "å¹´çº§", "ç­çº§", "å­¦å·", "å§“å", "æ€§åˆ«", "å‡ºç”Ÿæ—¥æœŸ", "ç”µè¯" };
 
 		public HaveChangePanel(JFrame jf) {
 			this.jf = jf;
 			this.setLayout(new BorderLayout());
-			jb = new JButton("ĞŞ¸ÄĞÅÏ¢");
+			jb = new JButton("ä¿®æ”¹ä¿¡æ¯");
 			jb.addActionListener(this);
 			JPanel jp_up = new JPanel();
 			jp_up.setLayout(new BorderLayout());
@@ -130,7 +130,7 @@ public class StuViewTest extends FaceUtil implements ActionListener {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			if (e.getSource() == jb) {
-				System.out.println("ĞŞ¸ÄĞÅÏ¢°¡");
+				System.out.println("ä¿®æ”¹ä¿¡æ¯å•Š");
 				int a = jt.getSelectedRow();
 				int b = jt.getColumnCount();
 				System.out.println(a + " / " + b);
@@ -154,11 +154,11 @@ public class StuViewTest extends FaceUtil implements ActionListener {
 	public class ExitSelectCourse extends JPanel implements ActionListener {
 		JTable jt;
 		JButton jb;
-		String[] name = { "ÔºÏµ", "¿Î³Ì±àºÅ", "¿Î³ÌÃû³Æ", "×ÜÑ§Ê±", "¿Î³ÌÑ§·Ö", "ÈÎ¿Î½ÌÊ¦", "ÉÏ¿Î°à¼¶", "ÉÏ¿ÎÊ±¼ä", "ÉÏ¿ÎµØµã", "¿¼ºË·½Ê½", "ÉÏ¿ÎÈËÊı" };
+		String[] name = { "é™¢ç³»", "è¯¾ç¨‹ç¼–å·", "è¯¾ç¨‹åç§°", "æ€»å­¦æ—¶", "è¯¾ç¨‹å­¦åˆ†", "ä»»è¯¾æ•™å¸ˆ", "ä¸Šè¯¾ç­çº§", "ä¸Šè¯¾æ—¶é—´", "ä¸Šè¯¾åœ°ç‚¹", "è€ƒæ ¸æ–¹å¼", "ä¸Šè¯¾äººæ•°" };
 
 		public ExitSelectCourse(JFrame jf) {
 			this.setLayout(new BorderLayout());
-			jb = new JButton("ÍË¿Î");
+			jb = new JButton("é€€è¯¾");
 			jb.addActionListener(this);
 			JPanel jp_up = new JPanel();
 			jp_up.setLayout(new BorderLayout());
@@ -174,10 +174,10 @@ public class StuViewTest extends FaceUtil implements ActionListener {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			if (e.getSource() == jb) {
-				int a = JOptionPane.showConfirmDialog(this, "ÄúÕæµÄÒªÍËÑ¡ÕâÃÅ¿Î³Ì£¿");
+				int a = JOptionPane.showConfirmDialog(this, "æ‚¨çœŸçš„è¦é€€é€‰è¿™é—¨è¯¾ç¨‹ï¼Ÿ");
 				switch (a) {
 				case 0:
-					System.out.println("ÄúÒÑÈ·¶¨ÍËÑ¡ÕâÃÅ¿Î³Ì");
+					System.out.println("æ‚¨å·²ç¡®å®šé€€é€‰è¿™é—¨è¯¾ç¨‹");
 					int row = jt.getSelectedRow();
 					if (row < 0) {
 						return;
@@ -198,11 +198,11 @@ public class StuViewTest extends FaceUtil implements ActionListener {
 	public class SelectCourse extends JPanel implements ActionListener{
 		JTable jt;
 		JButton jb;
-		String[] name ={ "ÔºÏµ", "¿Î³Ì±àºÅ","¿Î³ÌÃû³Æ", "×ÜÑ§Ê±",  "¿Î³ÌÑ§·Ö", "ÈÎ¿Î½ÌÊ¦", "ÉÏ¿Î°à¼¶", "ÉÏ¿ÎÊ±¼ä",  "ÉÏ¿ÎµØµã", "¿¼ºË·½Ê½", "ÉÏ¿ÎÈËÊı"};
+		String[] name ={ "é™¢ç³»", "è¯¾ç¨‹ç¼–å·","è¯¾ç¨‹åç§°", "æ€»å­¦æ—¶",  "è¯¾ç¨‹å­¦åˆ†", "ä»»è¯¾æ•™å¸ˆ", "ä¸Šè¯¾ç­çº§", "ä¸Šè¯¾æ—¶é—´",  "ä¸Šè¯¾åœ°ç‚¹", "è€ƒæ ¸æ–¹å¼", "ä¸Šè¯¾äººæ•°"};
 		Vector<Object> rowData;
 		public SelectCourse(JFrame jf) {
 			this.setLayout(new BorderLayout());
-			jb = new JButton("Ñ¡¿Î");
+			jb = new JButton("é€‰è¯¾");
 			jb.addActionListener(this);
 			JPanel jp_up = new JPanel();
 			jp_up.setLayout(new BorderLayout());
@@ -217,10 +217,10 @@ public class StuViewTest extends FaceUtil implements ActionListener {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			if (e.getSource() == jb) {
-				int a = JOptionPane.showConfirmDialog(this, "ÄúÕæµÄÒªÑ¡ÕâÃÅ¿Î³Ì£¿");
+				int a = JOptionPane.showConfirmDialog(this, "æ‚¨çœŸçš„è¦é€‰è¿™é—¨è¯¾ç¨‹ï¼Ÿ");
 				switch (a) {
 				case 0:
-					System.out.println("ÄúÒÑÈ·¶¨Ñ¡ÕâÃÅ¿Î³Ì");
+					System.out.println("æ‚¨å·²ç¡®å®šé€‰è¿™é—¨è¯¾ç¨‹");
 					int row = jt.getSelectedRow();
 					if (row < 0) {
 						return;
@@ -235,16 +235,16 @@ public class StuViewTest extends FaceUtil implements ActionListener {
 						int cccc = ccc.addChooseCourse(cc,(int)jt.getValueAt(row, 10));
 						switch (cccc) {
 						case 11: 
-							JOptionPane.showMessageDialog(this, "Ñ¡¹ı¸Ã¿Î³ÌÁË");
+							JOptionPane.showMessageDialog(this, "é€‰è¿‡è¯¥è¯¾ç¨‹äº†");
 							 break;
 						case 13: 
-							JOptionPane.showMessageDialog(this, "Ñ¡¿ÎÊıÄ¿´ïµ½ÉÏÏŞ");
+							JOptionPane.showMessageDialog(this, "é€‰è¯¾æ•°ç›®è¾¾åˆ°ä¸Šé™");
 							 break;
 						case 9: 
-							JOptionPane.showMessageDialog(this, "Ñ¡¿Î³É¹¦");
+							JOptionPane.showMessageDialog(this, "é€‰è¯¾æˆåŠŸ");
 							  break;
 						case 99: 
-							JOptionPane.showMessageDialog(this, "¸Ã¿Î³ÌÈËÊıÒÑÂú£¬ÇëÑ¡ÔñÆäËû¿Î³Ì");
+							JOptionPane.showMessageDialog(this, "è¯¥è¯¾ç¨‹äººæ•°å·²æ»¡ï¼Œè¯·é€‰æ‹©å…¶ä»–è¯¾ç¨‹");
 							  break;
 						}
 					}

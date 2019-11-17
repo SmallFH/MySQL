@@ -41,33 +41,33 @@ public class UserView extends FaceUtil implements ActionListener {
 			String pass = new String(SwingUtil.jpf[0].getPassword());
 			switch (userControl.enterJudge((String) SwingUtil.jcb.getSelectedItem(), name, pass)) {
 			case 0:
-				JOptionPane.showMessageDialog(this, "²éÎŞ´ËºÅ£¡");
+				JOptionPane.showMessageDialog(this, "æŸ¥æ— æ­¤å·ï¼");
 				break;
 			case 1:
-				System.out.println("Ñ§Éú");
+				System.out.println("å­¦ç”Ÿ");
 				System.out.println(name);
 				new StuViewTest(name);
 				this.dispose();
 				break;
 			case 2:
-				System.out.println("½ÌÊ¦");
+				System.out.println("æ•™å¸ˆ");
 				System.out.println(name);
 				new TeachViewTest(name);
 				this.dispose();
 				break;
 			case 3:
-				System.out.println("¹ÜÀíÔ±");
+				System.out.println("ç®¡ç†å‘˜");
 				new AdminViewTest(name);
 				this.dispose();
 				break;
 			case 4:
-				JOptionPane.showMessageDialog(this, "ÇëÊäÈëÓÃ»§ÕËºÅ£¡");
+				JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥ç”¨æˆ·è´¦å·ï¼");
 				break;
 			case 5:
-				JOptionPane.showMessageDialog(this, "ÇëÊäÈëÃÜÂë£¡");
+				JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥å¯†ç ï¼");
 				break;
 			case 6:
-				JOptionPane.showMessageDialog(this, "ÃÜÂë´íÎó£¡");
+				JOptionPane.showMessageDialog(this, "å¯†ç é”™è¯¯ï¼");
 				break;
 			}
 		}else {

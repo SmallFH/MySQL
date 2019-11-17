@@ -47,7 +47,7 @@ public class AdminViewTest extends FaceUtil implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == SwingUtil.jmi[0][0]) {
-			System.out.println("²é¿´Ñ§ÉúĞÅÏ¢");
+			System.out.println("æŸ¥çœ‹å­¦ç”Ÿä¿¡æ¯");
 			AdminInfoPanel aip = new AdminInfoPanel(0);
 			JPanel ap = aip.JP();
 			jp.removeAll();
@@ -57,7 +57,7 @@ public class AdminViewTest extends FaceUtil implements ActionListener{
 			jp.validate();
 			
 		}else if (e.getSource() == SwingUtil.jmi[1][0]) {
-			System.out.println("²é¿´½ÌÊ¦ĞÅÏ¢");
+			System.out.println("æŸ¥çœ‹æ•™å¸ˆä¿¡æ¯");
 			AdminInfoPanel aip = new AdminInfoPanel(1);
 			JPanel ap = aip.JP();
 			jp.removeAll();
@@ -66,7 +66,7 @@ public class AdminViewTest extends FaceUtil implements ActionListener{
 			jp.repaint();
 			jp.validate();
 		}else if (e.getSource() == SwingUtil.jmi[2][0]) {
-			System.out.println("²é¿´³É¼¨ĞÅÏ¢");
+			System.out.println("æŸ¥çœ‹æˆç»©ä¿¡æ¯");
 			AdminInfoPanel aip = new AdminInfoPanel(2);
 			JPanel ap = aip.JP();
 			jp.removeAll();
@@ -75,7 +75,7 @@ public class AdminViewTest extends FaceUtil implements ActionListener{
 			jp.repaint();
 			jp.validate();
 		}else if (e.getSource() == SwingUtil.jmi[3][0]) {
-			System.out.println("²é¿´¿Î³ÌĞÅÏ¢");
+			System.out.println("æŸ¥çœ‹è¯¾ç¨‹ä¿¡æ¯");
 			AdminInfoPanel aip = new AdminInfoPanel(3);
 			JPanel ap = aip.JP();
 			jp.removeAll();
@@ -84,7 +84,7 @@ public class AdminViewTest extends FaceUtil implements ActionListener{
 			jp.repaint();
 			jp.validate();
 		}else if (e.getSource() == SwingUtil.jmi[4][0]) {
-			System.out.println("ĞŞ¸Ä¹ÜÀíÔ±ÃÜÂë");
+			System.out.println("ä¿®æ”¹ç®¡ç†å‘˜å¯†ç ");
 			ChangePassWordText cpw = new ChangePassWordText(3,adminAccount,adminQuestion,adminAnswer,this);
 			JPanel cp = cpw.JP();
 			jp.removeAll();
@@ -94,7 +94,7 @@ public class AdminViewTest extends FaceUtil implements ActionListener{
 			jp.validate();
 			
 		}else if (e.getSource() == SwingUtil.jmi[4][1]) {
-			System.out.println("ÖØÖÃÓÃ»§ÃÜÂë");
+			System.out.println("é‡ç½®ç”¨æˆ·å¯†ç ");
 			RestPassWord rpw = new RestPassWord(adminPassWord);
 			JPanel rp = rpw.JP();
 			jp.removeAll();

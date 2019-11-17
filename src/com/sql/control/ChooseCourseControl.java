@@ -25,7 +25,7 @@ public class ChooseCourseControl {
 			for (int i = 0; i < b.size(); i++) {
 				d[i] = (Vector<Object>) b.get(i);
 				if (d[i].get(1).equals(chooseCourse.getCou_id())) {
-					return a = 11;//已经选过该课程了
+					return a = 11;//宸茬粡閫夎繃璇ヨ绋嬩簡
 				}else {
 					a = 12; 
 				}
@@ -53,8 +53,8 @@ public class ChooseCourseControl {
 		for (int i = 0; i < a.size(); i++) {
 			b[i] = (Vector<Object>) a.get(i);
 			switch ((String)b[i].get(9)) {
-			case "0": b[i].set(9, "考查"); break;
-			case "1": b[i].set(9, "考试"); break;
+			case "0": b[i].set(9, "鑰冩煡"); break;
+			case "1": b[i].set(9, "鑰冭瘯"); break;
 			}
 			rowData.add(b[i]);
 		}

@@ -34,35 +34,35 @@ public class AdminControl {
 			switch (tableNumber) {
 			case 0:
 				switch ((String)newResult[i].get(2)) {
-				case "1": newResult[i].set(2, "´óÒ»"); break;
-				case "2": newResult[i].set(2, "´ó¶ş"); break;
-				case "3": newResult[i].set(2, "´óÈı"); break;
-				case "4": newResult[i].set(2, "´óËÄ"); break;
+				case "1": newResult[i].set(2, "å¤§ä¸€"); break;
+				case "2": newResult[i].set(2, "å¤§äºŒ"); break;
+				case "3": newResult[i].set(2, "å¤§ä¸‰"); break;
+				case "4": newResult[i].set(2, "å¤§å››"); break;
 				}
 				switch ((String)newResult[i].get(6)) {
-				case "0": newResult[i].set(6, "Å®"); break;
-				case "1": newResult[i].set(6, "ÄĞ"); break;
+				case "0": newResult[i].set(6, "å¥³"); break;
+				case "1": newResult[i].set(6, "ç”·"); break;
 				}
 				newResult[i].set(7, change.toStringDate((Timestamp) newResult[i].get(7)));
 				break;
 			case 1:
 				switch ((String)newResult[i].get(5)) {
-				case "0": newResult[i].set(5, "Å®"); break;
-				case "1": newResult[i].set(5, "ÄĞ"); break;
+				case "0": newResult[i].set(5, "å¥³"); break;
+				case "1": newResult[i].set(5, "ç”·"); break;
 				}
 				newResult[i].set(6, change.toStringDate((Timestamp) newResult[i].get(6)));
 				break;
 			case 3:
 				switch ((String)newResult[i].get(10)) {
-				case "0": newResult[i].set(10, "¿¼²é"); break;
-				case "1": newResult[i].set(10, "¿¼ÊÔ"); break;
+				case "0": newResult[i].set(10, "è€ƒæŸ¥"); break;
+				case "1": newResult[i].set(10, "è€ƒè¯•"); break;
 				}
 				switch ((String)newResult[i].get(5)) {
 				case "0":
-					newResult[i].set(5, "Õı¿Î");
+					newResult[i].set(5, "æ­£è¯¾");
 					break;
 				case "1":
-					newResult[i].set(5, "Ñ¡ĞŞ¿Î");
+					newResult[i].set(5, "é€‰ä¿®è¯¾");
 					break;
 				}
 			}
@@ -74,7 +74,7 @@ public class AdminControl {
 	public int addAllInfo(int tableNumber, String[][] data) {
 		int judge = 1;
 		String[][] passArray = new String[data[0].length][data.length];
-		//ÅĞ¶ÏdataÖĞµÄÊı¾İ
+		//åˆ¤æ–­dataä¸­çš„æ•°æ®
 		switch (tableNumber) {
 		case 0:
 			for (int i = 0; i < data.length; i++) {
@@ -83,21 +83,21 @@ public class AdminControl {
 						return 0;
 					}
 					else if (!SwingUtil.isValidDate(data[i][7])) {
-						//ÈÕÆÚ´íÎó
+						//æ—¥æœŸé”™è¯¯
 						return 7;
 					}
 					
 					switch (data[i][2]) {
-					case "´óÒ»":
+					case "å¤§ä¸€":
 						data[i][2] = "1";
 						break;
-					case "´ó¶ş":
+					case "å¤§äºŒ":
 						data[i][2] = "2";
 						break;
-					case "´óÈı":
+					case "å¤§ä¸‰":
 						data[i][2] = "3";
 						break;
-					case "´óËÄ":
+					case "å¤§å››":
 						data[i][2] = "4";
 						break;
 					case "1":
@@ -112,10 +112,10 @@ public class AdminControl {
 						return 2;
 					}
 					switch (data[i][6]) {
-					case "ÄĞ":
+					case "ç”·":
 						data[i][6] = "1";
 						break;
-					case "Å®":
+					case "å¥³":
 						data[i][6] = "0";
 						break;
 					case "1":

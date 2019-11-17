@@ -10,28 +10,28 @@ public class AdminDao {
 	String field;
 	String condition;
 	/**
-	 * ·ÖÒ³²éÑ¯
-	 * table ²éÑ¯µÄ±í£¬field ²éÑ¯µÄ×Ö¶Î£¬condition ²éÑ¯µÄÌõ¼ş
+	 * åˆ†é¡µæŸ¥è¯¢
+	 * table æŸ¥è¯¢çš„è¡¨ï¼Œfield æŸ¥è¯¢çš„å­—æ®µï¼Œcondition æŸ¥è¯¢çš„æ¡ä»¶
 	 * @param tableNumber
 	 */
 	
 	public AdminDao(int tableNumber) {
-		//0´ú±íÑ§Éú
+		//0ä»£è¡¨å­¦ç”Ÿ
 		if (tableNumber == 0) {
 			table = "info_stu";
 			field = "institute,major,grade,class,id,stu_name,sex,birthday,phone";
 			condition = "concat("+field+")";
-		//1´ú±í½ÌÊ¦
+		//1ä»£è¡¨æ•™å¸ˆ
 		}else if (tableNumber == 1) {
 			table = "info_teacher";
 			field = "instutue,major,id,teaching,teach_name,sex,birthday,phone";
 			condition = "concat("+field+")";
-		//2´ú±í³É¼¨
+		//2ä»£è¡¨æˆç»©
 		}else if (tableNumber == 2) {
 			table = "info_stu,school.grade";
 			field = "institute,major,class,id,stu_name,cou_name,cou_teacher,school.grade.grade";
 			condition = " school.grade.stu_id=info_stu.id and concat("+field+")";
-		//3´ú±í¿Î³Ì
+		//3ä»£è¡¨è¯¾ç¨‹
 		}else if (tableNumber == 3) {
 			table = "course_info left join course_class " + 
 					"on course_info.id = course_class.cou_id";

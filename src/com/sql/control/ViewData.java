@@ -8,123 +8,123 @@ public class ViewData {
 	static DataMap dataMap = new DataMap();
 	
 	public static DataMap enterView() {
-		dataMap.setJf_name("µÇÂ¼");
+		dataMap.setJf_name("ç™»å½•");
 		dataMap.setJf_size(new int[] {400, 400 });
-		dataMap.setJb_name(new String[] { "µÇÂ¼", "×¢²á" });
+		dataMap.setJb_name(new String[] { "ç™»å½•", "æ³¨å†Œ" });
 		dataMap.setJb_parameter(new int[] { 2, 100, 170, 70, 40 });
-		dataMap.setJl_name(new String[] { "ÓÃ»§Ãû£º", "ÃÜ     Âë£º"});
+		dataMap.setJl_name(new String[] { "ç”¨æˆ·åï¼š", "å¯†     ç ï¼š"});
 		dataMap.setJl_parameter(new int[] { 2, 100, 85, 80, 30 });
 		dataMap.setJtf_parameter(new int[] { 1, 160, 85, 150, 30 });
 		dataMap.setJpf_parameter(new int[] { 1, 160, 115, 150, 30 });
-		dataMap.setJcb_name(new String[] { "Ñ§Éú", "½ÌÊ¦", "¹ÜÀíÔ±" });
+		dataMap.setJcb_name(new String[] { "å­¦ç”Ÿ", "æ•™å¸ˆ", "ç®¡ç†å‘˜" });
 		dataMap.setJcb_parameter(new int[] { 3, 240, 170, 70, 40 });
 		return dataMap;
 	}
 	
 	public static DataMap StudentPanel() {
-		dataMap.setJl_name(new String[] {"Äê¼¶£º","ĞÔ±ğ£º","ÔºÏµ£º",
-				"×¨Òµ£º","°à¼¶£º","Ñ§ºÅ£º","ĞÕÃû£º","ÉúÈÕ£º",
-				"µç»°£º","ÃÜ±£ÎÊÌâ£º","ÃÜ±£´ğ°¸£º","ÃÜÂë£º","È·ÈÏÃÜÂë£º"});
+		dataMap.setJl_name(new String[] {"å¹´çº§ï¼š","æ€§åˆ«ï¼š","é™¢ç³»ï¼š",
+				"ä¸“ä¸šï¼š","ç­çº§ï¼š","å­¦å·ï¼š","å§“åï¼š","ç”Ÿæ—¥ï¼š",
+				"ç”µè¯ï¼š","å¯†ä¿é—®é¢˜ï¼š","å¯†ä¿ç­”æ¡ˆï¼š","å¯†ç ï¼š","ç¡®è®¤å¯†ç ï¼š"});
 		dataMap.setJl_parameter(new int[] { 13,50,50,70,40 });
-		dataMap.setJcb_name(new String[] { "´óÒ»", "´ó¶ş", "´óÈı" ,"´óËÄ"});
+		dataMap.setJcb_name(new String[] { "å¤§ä¸€", "å¤§äºŒ", "å¤§ä¸‰" ,"å¤§å››"});
 		dataMap.setJcb_parameter(new int[] { 4, 110, 55, 60, 30 });
 		dataMap.setJrb_parameter(new int[] {2,105,90,40,40});
-		dataMap.setJrb_name(new String[] {"ÄĞ","Å®"});
+		dataMap.setJrb_name(new String[] {"ç”·","å¥³"});
 		dataMap.setJtf_parameter(new int[] { 9,110,135,150,30 });
 		dataMap.setJpf_parameter(new int[] { 2,110,495,150,30 });
-		dataMap.setJf_name("×¢²á");
+		dataMap.setJf_name("æ³¨å†Œ");
 		dataMap.setJf_size(new int[] { 1000, 700 });
 		return dataMap;
 	}
 	
 	public static DataMap TeacherPanel() {
-		dataMap.setJl_name(new String[] {"ĞÔ±ğ£º","ÔºÏµ£º","×¨Òµ£º","Ö°¹¤ºÅ£º",
-				"½ÌÊÚ¿ÆÄ¿£º","ĞÕÃû£º","ÉúÈÕ£º","µç»°£º","ÃÜ±£ÎÊÌâ£º",
-				"ÃÜ±£´ğ°¸£º","ÃÜÂë£º","È·ÈÏÃÜÂë£º"});
+		dataMap.setJl_name(new String[] {"æ€§åˆ«ï¼š","é™¢ç³»ï¼š","ä¸“ä¸šï¼š","èŒå·¥å·ï¼š",
+				"æ•™æˆç§‘ç›®ï¼š","å§“åï¼š","ç”Ÿæ—¥ï¼š","ç”µè¯ï¼š","å¯†ä¿é—®é¢˜ï¼š",
+				"å¯†ä¿ç­”æ¡ˆï¼š","å¯†ç ï¼š","ç¡®è®¤å¯†ç ï¼š"});
 		dataMap.setJl_parameter(new int[] { 12,50,50,70,40 });
-		dataMap.setJrb_name(new String[] {"ÄĞ","Å®"});
+		dataMap.setJrb_name(new String[] {"ç”·","å¥³"});
 		dataMap.setJrb_parameter(new int[] {2,105,50,40,40});
 		dataMap.setJtf_parameter(new int[] { 9,110,95,150,30 });
 		dataMap.setJpf_parameter(new int[] { 2,110,455,150,30 });
-		dataMap.setJf_name("×¢²á");
+		dataMap.setJf_name("æ³¨å†Œ");
 		dataMap.setJf_size(new int[] { 1000, 700 });
 		return dataMap;
 	}
 	
 	public static DataMap RegisterView() {
-		dataMap.setJf_name("×¢²á");
+		dataMap.setJf_name("æ³¨å†Œ");
 		dataMap.setJf_size(new int[] {1000, 700 });
-		dataMap.setJb_name(new String[] { "Ìá½»", "ÍË³ö" });
+		dataMap.setJb_name(new String[] { "æäº¤", "é€€å‡º" });
 		dataMap.setJb_parameter(new int[] { 2, 100, 170, 70, 40 });
 		dataMap.setJrb_parameter(new int[] {2,100,100,40,40});
-		dataMap.setJrb_name(new String[] {"Ñ§Éú","½ÌÊ¦"});
+		dataMap.setJrb_name(new String[] {"å­¦ç”Ÿ","æ•™å¸ˆ"});
 		return dataMap;
 	}
 	
 	public static DataMap StuView() {
-		String[] jmu = { "¸öÈËĞÅÏ¢", "¿Î³ÌĞÅÏ¢", "³É¼¨ĞÅÏ¢", "ÃÜÂëĞÅÏ¢"};
-		String[] jmi1 = {"²é¿´¸öÈËĞÅÏ¢"};
-		String[] jmi2 = { "²é¿´°à¼¶¿Î³Ì", "¿ÉÑ¡¿Î³Ì", "²é¿´ÒÑÑ¡¿Î³Ì»òÍË¿Î"};
-		String[] jmi3 = {"²é¿´³É¼¨"};
-		String[] jmi4 = {"ĞŞ¸ÄÃÜÂë"};
+		String[] jmu = { "ä¸ªäººä¿¡æ¯", "è¯¾ç¨‹ä¿¡æ¯", "æˆç»©ä¿¡æ¯", "å¯†ç ä¿¡æ¯"};
+		String[] jmi1 = {"æŸ¥çœ‹ä¸ªäººä¿¡æ¯"};
+		String[] jmi2 = { "æŸ¥çœ‹ç­çº§è¯¾ç¨‹", "å¯é€‰è¯¾ç¨‹", "æŸ¥çœ‹å·²é€‰è¯¾ç¨‹æˆ–é€€è¯¾"};
+		String[] jmi3 = {"æŸ¥çœ‹æˆç»©"};
+		String[] jmi4 = {"ä¿®æ”¹å¯†ç "};
 		ArrayList<String[]> arrayList = new ArrayList<>();
 		arrayList.add(jmu);
 		arrayList.add(jmi1);
 		arrayList.add(jmi2);
 		arrayList.add(jmi3);
 		arrayList.add(jmi4);
-		dataMap.setJf_name("Ñ§Éú¶Ë");
+		dataMap.setJf_name("å­¦ç”Ÿç«¯");
 		dataMap.setJf_size(new int[] {1000, 700 });
 		dataMap.setArrayList(arrayList);
 		return dataMap;
 	}
 	public static DataMap ChoosePanel() {
-		dataMap.setJf_name("Ñ¡¿Î");
+		dataMap.setJf_name("é€‰è¯¾");
 		dataMap.setJf_size(new int[] {1000, 700 });
-		dataMap.setJl_name(new String[] { "¿Î³Ì±àºÅ£º"});
+		dataMap.setJl_name(new String[] { "è¯¾ç¨‹ç¼–å·ï¼š"});
 		dataMap.setJl_parameter(new int[] { 1, 250, 10, 80, 30 });
 		dataMap.setJtf_parameter(new int[] { 1,350,10,150,30 });
-		dataMap.setJb_name(new String[]{"Ñ¡¿Î"});
+		dataMap.setJb_name(new String[]{"é€‰è¯¾"});
 		dataMap.setJb_parameter(new int[] {1,550,10,100,30});
 		return dataMap;
 		
 	}
 	
 	public static DataMap TeachView() {
-		String[] jmu = { "¸öÈËĞÅÏ¢", "³É¼¨ĞÅÏ¢", "ÉÏ¿ÎÊ±¼ä",  "ÃÜÂë¹ÜÀí"};
-		String[] jmi1 = {"²é¿´¸öÈËĞÅÏ¢"};
-		String[] jmi2 = { "²é¿´Ëù´ø°à¼¶Ñ§Éú³É¼¨ĞÅÏ¢", "Â¼ÈëËù´ø°à¼¶Ñ§Éú³É¼¨"};
-		String[] jmi3 = {"²é¿´¿Î³Ì"};
-		String[] jmi4 = {"ĞŞ¸ÄÃÜÂë"};
+		String[] jmu = { "ä¸ªäººä¿¡æ¯", "æˆç»©ä¿¡æ¯", "ä¸Šè¯¾æ—¶é—´",  "å¯†ç ç®¡ç†"};
+		String[] jmi1 = {"æŸ¥çœ‹ä¸ªäººä¿¡æ¯"};
+		String[] jmi2 = { "æŸ¥çœ‹æ‰€å¸¦ç­çº§å­¦ç”Ÿæˆç»©ä¿¡æ¯", "å½•å…¥æ‰€å¸¦ç­çº§å­¦ç”Ÿæˆç»©"};
+		String[] jmi3 = {"æŸ¥çœ‹è¯¾ç¨‹"};
+		String[] jmi4 = {"ä¿®æ”¹å¯†ç "};
 		ArrayList<String[]> arrayList = new ArrayList<>();
 		arrayList.add(jmu);
 		arrayList.add(jmi1);
 		arrayList.add(jmi2);
 		arrayList.add(jmi3);
 		arrayList.add(jmi4);
-		dataMap.setJf_name("½ÌÊ¦¶Ë");
+		dataMap.setJf_name("æ•™å¸ˆç«¯");
 		dataMap.setJf_size(new int[] {1000, 700 });
 		dataMap.setArrayList(arrayList);
 		return dataMap;
 	}
 	
 	public static DataMap AddGradePanel() {
-		dataMap.setJf_name("½ÌÊ¦¶Ë");
+		dataMap.setJf_name("æ•™å¸ˆç«¯");
 		dataMap.setJf_size(new int[] {1000, 700 });
-		dataMap.setJl_name(new String[] { "Ñ§ºÅ£º","³É¼¨£º"});
+		dataMap.setJl_name(new String[] { "å­¦å·ï¼š","æˆç»©ï¼š"});
 		dataMap.setJl_parameter(new int[] { 2, 250, 10, 80, 30 });
-		dataMap.setJb_name(new String[]{"Â¼Èë"});
+		dataMap.setJb_name(new String[]{"å½•å…¥"});
 		dataMap.setJb_parameter(new int[] {1,550,10,100,30});
 		dataMap.setJtf_parameter(new int[] { 2,110,135,150,30 });
 		return dataMap;
 	}
 	
 	public static DataMap ChangePass() {
-		dataMap.setJf_name("ĞŞ¸ÄÃÜÂë");
+		dataMap.setJf_name("ä¿®æ”¹å¯†ç ");
 		dataMap.setJf_size(new int[] {1000, 700 });
-		dataMap.setJl_name(new String[] { "ÃÜ±£ÎÊÌâ£º","ÃÜ±£´ğ°¸£º","ĞÂÃÜÂë£º","È·ÈÏĞÂÃÜÂë£º"});
+		dataMap.setJl_name(new String[] { "å¯†ä¿é—®é¢˜ï¼š","å¯†ä¿ç­”æ¡ˆï¼š","æ–°å¯†ç ï¼š","ç¡®è®¤æ–°å¯†ç ï¼š"});
 		dataMap.setJl_parameter(new int[] { 4, 250, 10, 80, 30 });
-		dataMap.setJb_name(new String[]{"ĞŞ¸Ä", "Íü¼ÇÃÜ±£´ğ°¸£¿"});
+		dataMap.setJb_name(new String[]{"ä¿®æ”¹", "å¿˜è®°å¯†ä¿ç­”æ¡ˆï¼Ÿ"});
 		dataMap.setJb_parameter(new int[] {2,550,10,100,30});
 		dataMap.setJtf_parameter(new int[] { 1,110,135,150,30 });
 		dataMap.setJpf_parameter(new int[] { 2,110,170,150,30 });
@@ -134,26 +134,26 @@ public class ViewData {
 	
 	
 	public static DataMap RestPassWord() {
-		dataMap.setJf_name("ÖØÖÃÃÜÂë");
+		dataMap.setJf_name("é‡ç½®å¯†ç ");
 		dataMap.setJf_size(new int[] {1000, 700 });
-		dataMap.setJl_name(new String[] { "ÖØÖÃÃÜÂëÕËºÅ£º","¹ÜÀíÔ±ÃÜÂë£º","ÓÃ»§Éí·İ£º"});
+		dataMap.setJl_name(new String[] { "é‡ç½®å¯†ç è´¦å·ï¼š","ç®¡ç†å‘˜å¯†ç ï¼š","ç”¨æˆ·èº«ä»½ï¼š"});
 		dataMap.setJl_parameter(new int[] { 3, 250, 10, 80, 30 });
-		dataMap.setJb_name(new String[]{"ÖØÖÃ"});
+		dataMap.setJb_name(new String[]{"é‡ç½®"});
 		dataMap.setJb_parameter(new int[] {1,550,10,100,30});
 		dataMap.setJtf_parameter(new int[] { 1,110,135,150,30 });
 		dataMap.setJpf_parameter(new int[] { 1,110,170,150,30 });
-		dataMap.setJcb_name(new String[] { "Ñ§Éú", "½ÌÊ¦" });
+		dataMap.setJcb_name(new String[] { "å­¦ç”Ÿ", "æ•™å¸ˆ" });
 		dataMap.setJcb_parameter(new int[] { 2, 240, 170, 70, 40 });
 		return dataMap;
 	}
 	
 	public static DataMap AdminView() {
-		String[] jmu = { "Ñ§Éú¸öÈËĞÅÏ¢¹ÜÀí", "½ÌÊ¦¸öÈËĞÅÏ¢¹ÜÀí", "Ñ§Éú³É¼¨ĞÅÏ¢¹ÜÀí", "¿Î³ÌĞÅÏ¢¹ÜÀí", "ÃÜÂëĞÅÏ¢¹ÜÀí"};
-		String[] jmi1 = {"Ñ§Éú¸öÈËĞÅÏ¢"};
-		String[] jmi2 = { "½ÌÊ¦¸öÈËĞÅÏ¢"};
-		String[] jmi3 = {"³É¼¨ĞÅÏ¢"};
-		String[] jmi4 = {"¿Î³ÌĞÅÏ¢"};
-		String[] jmi5 = {"ĞŞ¸Ä¹ÜÀíÔ±ÃÜÂë","ÖØÖÃÓÃ»§ÃÜÂë"};
+		String[] jmu = { "å­¦ç”Ÿä¸ªäººä¿¡æ¯ç®¡ç†", "æ•™å¸ˆä¸ªäººä¿¡æ¯ç®¡ç†", "å­¦ç”Ÿæˆç»©ä¿¡æ¯ç®¡ç†", "è¯¾ç¨‹ä¿¡æ¯ç®¡ç†", "å¯†ç ä¿¡æ¯ç®¡ç†"};
+		String[] jmi1 = {"å­¦ç”Ÿä¸ªäººä¿¡æ¯"};
+		String[] jmi2 = { "æ•™å¸ˆä¸ªäººä¿¡æ¯"};
+		String[] jmi3 = {"æˆç»©ä¿¡æ¯"};
+		String[] jmi4 = {"è¯¾ç¨‹ä¿¡æ¯"};
+		String[] jmi5 = {"ä¿®æ”¹ç®¡ç†å‘˜å¯†ç ","é‡ç½®ç”¨æˆ·å¯†ç "};
 		ArrayList<String[]> arrayList = new ArrayList<>();
 		arrayList.add(jmu);
 		arrayList.add(jmi1);
@@ -161,7 +161,7 @@ public class ViewData {
 		arrayList.add(jmi3);
 		arrayList.add(jmi4);
 		arrayList.add(jmi5);
-		dataMap.setJf_name("¹ÜÀíÔ±¶Ë");
+		dataMap.setJf_name("ç®¡ç†å‘˜ç«¯");
 		dataMap.setJf_size(new int[] {1000, 700 });
 		dataMap.setArrayList(arrayList);
 		return dataMap;
@@ -169,21 +169,21 @@ public class ViewData {
 	}
 	
 	public static DataMap AdminInfoPanel() {
-		dataMap.setJf_name("Ãæ°åĞÅÏ¢");
+		dataMap.setJf_name("é¢æ¿ä¿¡æ¯");
 		dataMap.setJf_size(new int[] {1000, 700 });
 		dataMap.setJtf_parameter(new int[] { 1,110,10,150,30 });
-		dataMap.setJb_name(new String[]{"²éÑ¯","Ìí¼Ó","ĞŞ¸Ä","É¾³ı"});
+		dataMap.setJb_name(new String[]{"æŸ¥è¯¢","æ·»åŠ ","ä¿®æ”¹","åˆ é™¤"});
 		dataMap.setJb_parameter(new int[] {4,550,10,100,30});
 		return dataMap;
 	}
 	
 	public static DataMap ChangeSecurityIssue() {
-		dataMap.setJf_name("¸ü¸ÄÃÜ±£");
+		dataMap.setJf_name("æ›´æ”¹å¯†ä¿");
 		dataMap.setJf_size(new int[] {1000, 700 });
-		dataMap.setJl_name(new String[] { "ĞÂÃÜ±£ÎÊÌâ£º","ĞÂÃÜ±£´ğ°¸£º"});
+		dataMap.setJl_name(new String[] { "æ–°å¯†ä¿é—®é¢˜ï¼š","æ–°å¯†ä¿ç­”æ¡ˆï¼š"});
 		dataMap.setJl_parameter(new int[] { 2, 250, 10, 80, 30 });
 		dataMap.setJtf_parameter(new int[] { 2,110,10,150,30 });
-		dataMap.setJb_name(new String[]{"Ìá½»" ,"ÍË³öĞŞ¸Ä"});
+		dataMap.setJb_name(new String[]{"æäº¤" ,"é€€å‡ºä¿®æ”¹"});
 		dataMap.setJb_parameter(new int[] {2,550,10,100,30});
 		return dataMap;
 	}

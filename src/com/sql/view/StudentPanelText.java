@@ -27,8 +27,8 @@ public class StudentPanelText extends FaceUtil implements ActionListener{
 		dataMap = ViewData.StudentPanel();
 		SwingUtil.JL(dataMap, jp);
 		jtf = SwingUtil.JTF(dataMap, jp);
-		String[] egname = { "e.g. ¶¯Îï¿Æ¼¼Ñ§Ôº", "e.g. ¶¯ÎïÒ½Ñ§", "e.g. ¶¯Ò½181", "e.g. 11Î»Êı×Ö", "e.g. ÕÅÈı", "e.g. XXXX-XX-XX",
-				"e.g. 11Î»Êı×Ö", "e.g. ÎÒ½ĞÊ²Ã´Ãû×Ö£¿", "e.g. ÕÅÈı" };
+		String[] egname = { "e.g. åŠ¨ç‰©ç§‘æŠ€å­¦é™¢", "e.g. åŠ¨ç‰©åŒ»å­¦", "e.g. åŠ¨åŒ»181", "e.g. 11ä½æ•°å­—", "e.g. å¼ ä¸‰", "e.g. XXXX-XX-XX",
+				"e.g. 11ä½æ•°å­—", "e.g. æˆ‘å«ä»€ä¹ˆåå­—ï¼Ÿ", "e.g. å¼ ä¸‰" };
 		for (int i = 0; i < 9; i++) {
 			SwingUtil.jtf[i].addFocusListener((FocusListener) new JtextUtil(SwingUtil.jtf[i], egname[i]));
 		}

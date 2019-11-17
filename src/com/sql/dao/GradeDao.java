@@ -28,7 +28,7 @@ public class GradeDao {
 //	public static void main(String[] args) {
 //		Grade grade = new Grade();
 //		grade.setStu_id(new Long("20180724105"));
-//		grade.setCou_name("½âÆÊÑ§");
+//		grade.setCou_name("è§£å‰–å­¦");
 //		new GradeDao().deleteGrade(grade);
 //	}
 	
@@ -64,7 +64,7 @@ public class GradeDao {
 	}
 	
 //	public static void main(String[] args) {
-//		Vector<Object> a =new GradeDao().queryTeachGrade("Áø¶«Ñô","½âÆÊÑ§");
+//		Vector<Object> a =new GradeDao().queryTeachGrade("æŸ³ä¸œé˜³","è§£å‰–å­¦");
 //		System.out.println(a);
 //	}
 	

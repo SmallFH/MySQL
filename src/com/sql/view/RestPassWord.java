@@ -38,11 +38,11 @@ public class RestPassWord extends FaceUtil implements ActionListener{
 			Integer accountId = SwingUtil.jcb.getSelectedIndex()+1; 
 			UserControl uc = new UserControl();
 			switch (uc.restPassWord(accountId, account, adminPassWord, adminPass)) {
-			case 0: JOptionPane.showMessageDialog(jp, "ÇëÊäÈë¹ÜÀíÔ±ÃÜÂë"); break;
-			case 1: JOptionPane.showMessageDialog(jp, "ÇëÊäÈëÖØÖÃÃÜÂëÕËºÅ"); break;
-			case 2: JOptionPane.showMessageDialog(jp, "ÖØÖÃÃÜÂë³É¹¦"); break;
-			case 3: JOptionPane.showMessageDialog(jp, "ÖØÖÃÃÜÂëµÄÕËºÅ²»´æÔÚ"); break;
-			case 4: JOptionPane.showMessageDialog(jp, "¹ÜÀíÔ±ÃÜÂë²»ÕıÈ·"); break;
+			case 0: JOptionPane.showMessageDialog(jp, "è¯·è¾“å…¥ç®¡ç†å‘˜å¯†ç "); break;
+			case 1: JOptionPane.showMessageDialog(jp, "è¯·è¾“å…¥é‡ç½®å¯†ç è´¦å·"); break;
+			case 2: JOptionPane.showMessageDialog(jp, "é‡ç½®å¯†ç æˆåŠŸ"); break;
+			case 3: JOptionPane.showMessageDialog(jp, "é‡ç½®å¯†ç çš„è´¦å·ä¸å­˜åœ¨"); break;
+			case 4: JOptionPane.showMessageDialog(jp, "ç®¡ç†å‘˜å¯†ç ä¸æ­£ç¡®"); break;
 			}
 			
 		}

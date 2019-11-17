@@ -50,7 +50,7 @@ public class RegisterViewText extends FaceUtil implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		UserControl user = new UserControl();
 		if (e.getSource() == SwingUtil.jrb[0]) {
-			System.out.println("Ìí¼ÓÑ§ÉúÃæ°å");
+			System.out.println("æ·»åŠ å­¦ç”Ÿé¢æ¿");
 			this.jp.removeAll();
 			this.jp.add(s);
 			s.setBounds(0, 0, 800, 800);
@@ -59,13 +59,13 @@ public class RegisterViewText extends FaceUtil implements ActionListener {
 		} else if ((e.getSource() == SwingUtil.jb[0]) && (SwingUtil.jrb[0].isSelected())) {
 			int a = 0, b = 2;
 			StudentControl stc = new StudentControl();
-			System.out.println("Ìá½»Ñ§ÉúĞÅÏ¢");
+			System.out.println("æäº¤å­¦ç”Ÿä¿¡æ¯");
 			String[] stu_prame = new String[9];
 			String[] user_para = new String[5];
 			String gard = (String) st.jcb.getSelectedItem();
 			String sex = new String();
 			if (st.jrb[1].isSelected()) {
-				sex = "Å®";
+				sex = "å¥³";
 			}
 			for (int i = 0; i <= 9; i++) {
 				if (i < 7) {
@@ -86,58 +86,58 @@ public class RegisterViewText extends FaceUtil implements ActionListener {
 			
 			 switch (stucon) {
 			 case 0:
-				 JOptionPane.showMessageDialog(this, "ÇëÊäÈëÑ§ÔºÃû£¡");
+				 JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥å­¦é™¢åï¼");
 				 return;
 			 case 1:
-				 JOptionPane.showMessageDialog(this, "ÇëÊäÈë×¨ÒµÃû£¡");
+				 JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥ä¸“ä¸šåï¼");
 				 return;
 			 case 2:
-				 JOptionPane.showMessageDialog(this, "ÇëÊäÈë°à¼¶Ãû£¡");
+				 JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥ç­çº§åï¼");
 				 return;
 			 case 3:
-				 JOptionPane.showMessageDialog(this, "ÇëÊäÈëÑ§ºÅ£¡");
+				 JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥å­¦å·ï¼");
 			 return;
 			 case 4:
-				 JOptionPane.showMessageDialog(this, "ÇëÊäÈëĞÕÃû£¡");
+				 JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥å§“åï¼");
 			 return;
 			 case 5:
-				 JOptionPane.showMessageDialog(this, "ÇëÊäÈë³öÉúÈÕÆÚ£¡");
+				 JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥å‡ºç”Ÿæ—¥æœŸï¼");
 			 return;
 			 case 6:
-				 JOptionPane.showMessageDialog(this, "ÇëÊäÈëÊÖ»úºÅ£¡");
+				 JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥æ‰‹æœºå·ï¼");
 			 return;
 			 case 33:
-				 JOptionPane.showMessageDialog(this, "ÇëÊäÈë11Î»Êı×ÖÑ§ºÅ£¡");
+				 JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥11ä½æ•°å­—å­¦å·ï¼");
 			 return;
 			 case 55:
-				 JOptionPane.showMessageDialog(this, "³öÉúÈÕÆÚ¸ñÊ½´íÎó£¡");
+				 JOptionPane.showMessageDialog(this, "å‡ºç”Ÿæ—¥æœŸæ ¼å¼é”™è¯¯ï¼");
 			 return;
 			 }
 			 int u = user.addUser(1, user_para);
 			switch (u) {
 			case 0:
-				JOptionPane.showMessageDialog(this, "ÇëÊäÈëÃÜÂë£¡");
+				JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥å¯†ç ï¼");
 				return;
 			case 1:
-				JOptionPane.showMessageDialog(this, "ÇëÈ·ÈÏÃÜÂë£¡");
+				JOptionPane.showMessageDialog(this, "è¯·ç¡®è®¤å¯†ç ï¼");
 				return;
 			case 2:
-				JOptionPane.showMessageDialog(this, "ÇëÊäÈëÃÜ±£ÎÊÌâ£¡");
+				JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥å¯†ä¿é—®é¢˜ï¼");
 				return;
 			case 3:
-				JOptionPane.showMessageDialog(this, "ÇëÊäÈëÃÜ±£´ğ°¸£¡");
+				JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥å¯†ä¿ç­”æ¡ˆï¼");
 				return;
 			case 10:
-				JOptionPane.showMessageDialog(this, "Á½´ÎÃÜÂë²»Ò»ÖÂ£¬ÇëÖØĞÂÊäÈë");
+				JOptionPane.showMessageDialog(this, "ä¸¤æ¬¡å¯†ç ä¸ä¸€è‡´ï¼Œè¯·é‡æ–°è¾“å…¥");
 				return;
 			}
 			if (stucon == 9 && u == 9) {
 				if (!stc.addStu()) {
-					JOptionPane.showMessageDialog(this, "×¢²áÊ§°Ü£¡");
+					JOptionPane.showMessageDialog(this, "æ³¨å†Œå¤±è´¥ï¼");
 					return;
 				}else
 				if (stc.addStu()&&user.addUser()) {
-					JOptionPane.showMessageDialog(this, "×¢²á³É¹¦£¡");
+					JOptionPane.showMessageDialog(this, "æ³¨å†ŒæˆåŠŸï¼");
 					new UserView();
 					this.dispose();
 				} 
@@ -146,7 +146,7 @@ public class RegisterViewText extends FaceUtil implements ActionListener {
 		}
 
 		if (e.getSource() == SwingUtil.jrb[1]) {
-			System.out.println("Ìá½»½ÌÊ¦ĞÅÏ¢");
+			System.out.println("æäº¤æ•™å¸ˆä¿¡æ¯");
 			this.jp.removeAll();
 			this.jp.add(t);
 			t.setBounds(0, 0, 1000, 600);
@@ -160,7 +160,7 @@ public class RegisterViewText extends FaceUtil implements ActionListener {
 			String[] user_para = new String[5];
 			String sex = new String();
 			if (tp.jrb[1].isSelected()) {
-				sex = "Å®";
+				sex = "å¥³";
 			}
 			for (int i = 0; i <= 9; i++) {
 				if (i < 7) {
@@ -178,49 +178,49 @@ public class RegisterViewText extends FaceUtil implements ActionListener {
 			int tecon = tec.addTea(tea_prame);
 			 switch (tecon) {
 			 case 0:
-				 JOptionPane.showMessageDialog(this, "ÇëÊäÈëÑ§ÔºÃû£¡");
+				 JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥å­¦é™¢åï¼");
 				 return;
 			 case 1:
-				 JOptionPane.showMessageDialog(this, "ÇëÊäÈë×¨ÒµÃû£¡");
+				 JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥ä¸“ä¸šåï¼");
 				 return;
 			 case 2:
-				 JOptionPane.showMessageDialog(this, "ÇëÊäÈëÖ°¹¤ºÅ£¡");
+				 JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥èŒå·¥å·ï¼");
 				 return;
 			 case 3:
-				 JOptionPane.showMessageDialog(this, "ÇëÊäÈë½ÌÊÚ¿ÆÄ¿£¡");
+				 JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥æ•™æˆç§‘ç›®ï¼");
 			 return;
 			 case 4:
-				 JOptionPane.showMessageDialog(this, "ÇëÊäÈëĞÕÃû£¡");
+				 JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥å§“åï¼");
 			 return;
 			 case 5:
-				 JOptionPane.showMessageDialog(this, "ÇëÊäÈë³öÉúÈÕÆÚ£¡");
+				 JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥å‡ºç”Ÿæ—¥æœŸï¼");
 			 return;
 			 case 6:
-				 JOptionPane.showMessageDialog(this, "ÇëÊäÈëÊÖ»úºÅ£¡");
+				 JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥æ‰‹æœºå·ï¼");
 			 return;
 			 case 22:
-				 JOptionPane.showMessageDialog(this, "Ö°¹¤ºÅÖ»ÄÜÊÇÊı×Ö£¬²»ÄÜÎªÆäËû×Ö·û£¡");
+				 JOptionPane.showMessageDialog(this, "èŒå·¥å·åªèƒ½æ˜¯æ•°å­—ï¼Œä¸èƒ½ä¸ºå…¶ä»–å­—ç¬¦ï¼");
 			 return;
 			 case 55:
-				 JOptionPane.showMessageDialog(this, "³öÉúÈÕÆÚ¸ñÊ½´íÎó£¡");
+				 JOptionPane.showMessageDialog(this, "å‡ºç”Ÿæ—¥æœŸæ ¼å¼é”™è¯¯ï¼");
 			 return;
 			 }
 			 int u = user.addUser(2, user_para);
 			 switch (u) {
 				case 0:
-					JOptionPane.showMessageDialog(this, "ÃÜÂë²»ÄÜÎª¿Õ£¡");
+					JOptionPane.showMessageDialog(this, "å¯†ç ä¸èƒ½ä¸ºç©ºï¼");
 					return;
 				case 1:
-					JOptionPane.showMessageDialog(this, "ÇëÔÙ´ÎÈ·ÈÏÃÜÂë£¡");
+					JOptionPane.showMessageDialog(this, "è¯·å†æ¬¡ç¡®è®¤å¯†ç ï¼");
 					return;
 				case 2:
-					JOptionPane.showMessageDialog(this, "ÇëÊäÈëÃÜ±£ÎÊÌâ£¡");
+					JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥å¯†ä¿é—®é¢˜ï¼");
 					return;
 				case 3:
-					JOptionPane.showMessageDialog(this, "ÇëÊäÃÜ±£´ğ°¸£¡");
+					JOptionPane.showMessageDialog(this, "è¯·è¾“å¯†ä¿ç­”æ¡ˆï¼");
 					return;
 				case 10:
-					JOptionPane.showMessageDialog(this, "ÇëÊäÈëÊÖ»úºÅ£¡");
+					JOptionPane.showMessageDialog(this, "è¯·è¾“å…¥æ‰‹æœºå·ï¼");
 					return;
 				}
 			 if (tecon == 9 && u == 9) {
@@ -228,11 +228,11 @@ public class RegisterViewText extends FaceUtil implements ActionListener {
 				 aaa = tec.addTeacher();
 				 bbb = user.addUser();
 					if (!aaa) {
-						JOptionPane.showMessageDialog(this, "×¢²áÊ§°Ü£¡");
+						JOptionPane.showMessageDialog(this, "æ³¨å†Œå¤±è´¥ï¼");
 						return;
 					}else
 					if (aaa&&bbb) {
-						JOptionPane.showMessageDialog(this, "×¢²á³É¹¦£¡");
+						JOptionPane.showMessageDialog(this, "æ³¨å†ŒæˆåŠŸï¼");
 						new UserView();
 						this.dispose();
 					} 

@@ -33,10 +33,10 @@ public class TeacherControl {
 			System.out.println(i+" / " + newInfo[i]);
 		}
 		switch (newInfo[5]) {
-		case "ÄĞ":
+		case "ç”·":
 			sex = 2;
 			break;
-		case "Å®":
+		case "å¥³":
 			sex = 1;
 			break;
 		}
@@ -59,8 +59,8 @@ public class TeacherControl {
 		@SuppressWarnings("unchecked")
 		Vector<Object> teach = (Vector<Object>) teacherDao.queryOneTeacher(teachAccount).get(0);
 		switch ((String)teach.get(5)) {
-		case "0": teach.set(5, "Å®"); break;
-		case "1": teach.set(5, "ÄĞ"); break;
+		case "0": teach.set(5, "å¥³"); break;
+		case "1": teach.set(5, "ç”·"); break;
 		}
 		teach.set(6, change.toStringDate((Timestamp) teach.get(6)));
 		Vector<Object>  rowData = new Vector<>();
@@ -74,12 +74,12 @@ public class TeacherControl {
 	
 	public int addTea(String[] tea) {
 		int a = 9, sex = 2;
-		String[] egname = {"e.g. ¶¯Îï¿Æ¼¼Ñ§Ôº","e.g. ¶¯ÎïÒ½Ñ§","e.g. 11Î»Êı×Ö",
-				"e.g. ¼ÒĞó½âÆÊÑ§","e.g. ÕÅÈı","e.g. XXXX-XX-XX",
-				"e.g. 11Î»Êı×Ö"};
+		String[] egname = {"e.g. åŠ¨ç‰©ç§‘æŠ€å­¦é™¢","e.g. åŠ¨ç‰©åŒ»å­¦","e.g. 11ä½æ•°å­—",
+				"e.g. å®¶ç•œè§£å‰–å­¦","e.g. å¼ ä¸‰","e.g. XXXX-XX-XX",
+				"e.g. 11ä½æ•°å­—"};
 		Date birthday = change.toDate(tea[5]);
 		switch (tea[7]) {
-		case "Å®":
+		case "å¥³":
 			sex = 1;
 			break;
 		}

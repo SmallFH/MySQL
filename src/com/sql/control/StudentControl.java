@@ -33,14 +33,14 @@ public class StudentControl {
 		@SuppressWarnings("unchecked")
 		Vector<Object> stu = (Vector<Object>) studentDao.queryOneStudent(id).get(0);
 		switch ((String)stu.get(2)) {
-		case "1": stu.set(2, "´óÒ»"); break;
-		case "2": stu.set(2, "´ó¶ş"); break;
-		case "3": stu.set(2, "´óÈı"); break;
-		case "4": stu.set(2, "´óËÄ"); break;
+		case "1": stu.set(2, "å¤§ä¸€"); break;
+		case "2": stu.set(2, "å¤§äºŒ"); break;
+		case "3": stu.set(2, "å¤§ä¸‰"); break;
+		case "4": stu.set(2, "å¤§å››"); break;
 		}
 		switch ((String)stu.get(6)) {
-		case "0": stu.set(6, "Å®"); break;
-		case "1": stu.set(6, "ÄĞ"); break;
+		case "0": stu.set(6, "å¥³"); break;
+		case "1": stu.set(6, "ç”·"); break;
 		}
 		stu.set(7, change.toStringDate((Timestamp) stu.get(7)));
 		Vector<Object>  rowData = new Vector<>();
@@ -52,15 +52,15 @@ public class StudentControl {
 		int a = 9, grade = 1, sex = 2;
 		ChangeSqlUtil change = new ChangeSqlUtil();
 		Date birthday = change.toDate(stu[5]);
-		String[] egname = { "e.g. ¶¯Îï¿Æ¼¼Ñ§Ôº", "e.g. ¶¯ÎïÒ½Ñ§", "e.g. ¶¯Ò½181", "e.g. 11Î»Êı×Ö", "e.g. ÕÅÈı", "e.g. XXXX-XX-XX",
-				"e.g. 11Î»Êı×Ö" };
+		String[] egname = { "e.g. åŠ¨ç‰©ç§‘æŠ€å­¦é™¢", "e.g. åŠ¨ç‰©åŒ»å­¦", "e.g. åŠ¨åŒ»181", "e.g. 11ä½æ•°å­—", "e.g. å¼ ä¸‰", "e.g. XXXX-XX-XX",
+				"e.g. 11ä½æ•°å­—" };
 		switch (stu[7]) {
-		case "´ó¶ş": grade = 2; break;
-		case "´óÈı": grade = 3; break;
-		case "´óËÄ": grade = 4; break;
+		case "å¤§äºŒ": grade = 2; break;
+		case "å¤§ä¸‰": grade = 3; break;
+		case "å¤§å››": grade = 4; break;
 		}
 		switch (stu[8]) {
-		case "Å®": sex = 1; break;
+		case "å¥³": sex = 1; break;
 		}
 		for (int i = 0; i < egname.length; i++) {
 			if (stu[i].equals(egname[i])) {
@@ -93,25 +93,25 @@ public class StudentControl {
 			System.out.println(i+" / " + newInfo[i]);
 		}
 		switch (newInfo[6]) {
-		case "ÄĞ":
+		case "ç”·":
 			sex = 2;
 			break;
-		case "Å®":
+		case "å¥³":
 			sex = 1;
 			break;
 		}
 		
 		switch (newInfo[2]) {
-		case "´óÒ»":
+		case "å¤§ä¸€":
 			grade = 1;
 			break;
-		case "´ó¶ş":
+		case "å¤§äºŒ":
 			grade = 2;
 			break;
-		case "´óÈı":
+		case "å¤§ä¸‰":
 			grade = 3;
 			break;
-		case "´óËÄ":
+		case "å¤§å››":
 			grade = 4;
 			break;
 

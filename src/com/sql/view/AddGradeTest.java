@@ -47,12 +47,12 @@ public class AddGradeTest extends FaceUtil implements ActionListener{
 				grade.setCou_teacher(teacherName);
 				int a = gC.addGrade(grade);
 				if (a == 1) {
-					JOptionPane.showMessageDialog(this, "³É¼¨Â¼Èë³É¹¦");
+					JOptionPane.showMessageDialog(this, "æˆç»©å½•å…¥æˆåŠŸ");
 				}else {
-					JOptionPane.showMessageDialog(this, "³É¼¨Â¼ÈëÊ§°Ü");
+					JOptionPane.showMessageDialog(this, "æˆç»©å½•å…¥å¤±è´¥");
 				}
 			} catch (Exception e2) {
-				JOptionPane.showMessageDialog(this, "Ö»ÄÜÊäÈëÊı×Ö£¡");
+				JOptionPane.showMessageDialog(this, "åªèƒ½è¾“å…¥æ•°å­—ï¼");
 			}
 		}
 	}

@@ -22,10 +22,10 @@ public class UserControl {
 	public int enterJudge(String id, String account, String userpass) {
 		int idNumber = 1;
 		switch (id) {
-		case "½ÌÊ¦":
+		case "æ•™å¸ˆ":
 			idNumber = 2;
 			break;
-		case "¹ÜÀíÔ±":
+		case "ç®¡ç†å‘˜":
 			idNumber = 3;
 			break;
 		}
@@ -54,7 +54,7 @@ public class UserControl {
 	}
 
 	public int addUser(int id, String[] parameter) {
-		String[] egname = { "", "", "e.g. ÎÒ½ĞÊ²Ã´Ãû×Ö£¿", "e.g. ÕÅÈı", "e.g. 11Î»Êı×Ö" };
+		String[] egname = { "", "", "e.g. æˆ‘å«ä»€ä¹ˆåå­—ï¼Ÿ", "e.g. å¼ ä¸‰", "e.g. 11ä½æ•°å­—" };
 		for (int i = 0; i < egname.length; i++) {
 			if (parameter[i].equals(egname[i])) {
 				return i;
@@ -86,23 +86,23 @@ public class UserControl {
 			Vector<Object> a = (Vector<Object>) ud.queryAnswer(userAccount, answer).get(0);
 			String b = String.valueOf(userID);
 			if (a.get(0).equals(b)) {
-				ud.updatePass(userID, userAccount, newPass);// ĞèÒª´«¹ıÀ´´ğ°¸Õâ¸ö²ÎÊı
-				// ÏÈÅĞ¶ÏÃÜ±£´ğ°¸ÊÇ·ñÕıÈ·£¬ÔÚÈ¥ĞŞ¸ÄÃÜÂë
+				ud.updatePass(userID, userAccount, newPass);// éœ€è¦ä¼ è¿‡æ¥ç­”æ¡ˆè¿™ä¸ªå‚æ•°
+				// å…ˆåˆ¤æ–­å¯†ä¿ç­”æ¡ˆæ˜¯å¦æ­£ç¡®ï¼Œåœ¨å»ä¿®æ”¹å¯†ç 
 				return 1;
 			} else {
-				return 2;// ÃÜ±£´ğ°¸²»ÕıÈ·
+				return 2;// å¯†ä¿ç­”æ¡ˆä¸æ­£ç¡®
 			}
 		} else {
-			return 3;// Á½´ÎÊäÈëµÄÃÜÂë²»Ò»ÖÂ
+			return 3;// ä¸¤æ¬¡è¾“å…¥çš„å¯†ç ä¸ä¸€è‡´
 		}
 	}
 
 	public int restPassWord(int accountId, String account, String adminPassWord, String adminPass) {
 		if (adminPass.equals("") || adminPass == null) {
-			System.out.println("ÇëÊäÈë¹ÜÀíÔ±ÃÜÂë");
+			System.out.println("è¯·è¾“å…¥ç®¡ç†å‘˜å¯†ç ");
 			return 0;
 		} else if (account.equals("") || account == null) {
-			System.out.println("ÇëÊäÈëÖØÖÃÃÜÂëÕËºÅ");
+			System.out.println("è¯·è¾“å…¥é‡ç½®å¯†ç è´¦å·");
 			return 1;
 		} else {
 			try {
@@ -123,12 +123,12 @@ public class UserControl {
 
 	public int updateSecurityIssue(int userID, String userAccount, String newQuestion, String newAnswer) {
 		if (newQuestion.equals("") || newQuestion == null) {
-			return 1;// ÎÊÌâÎª¿Õ
+			return 1;// é—®é¢˜ä¸ºç©º
 		} else if (newAnswer.equals("") || newAnswer == null) {
-			return 2;// ´ğ°¸Îª¿Õ
+			return 2;// ç­”æ¡ˆä¸ºç©º
 		} else {
 			ud.updateSecurityIssue(userID, userAccount, newQuestion, newAnswer);
-			return 3;// ÃÜ±£ÎÊÌâĞŞ¸Ä³É¹¦
+			return 3;// å¯†ä¿é—®é¢˜ä¿®æ”¹æˆåŠŸ
 		}
 	}
 }
